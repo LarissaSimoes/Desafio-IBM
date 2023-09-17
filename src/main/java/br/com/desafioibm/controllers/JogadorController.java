@@ -26,7 +26,6 @@ public class JogadorController {
     @GetMapping("/times")
     public ResponseEntity<Map<String, List<String>>> getTimes() {
         List<Jogador> jogadores = larissaSimoes.getAllJogadores();
-        // Converter a lista de entidades Jogador para uma lista de nomes
         List<String> nomesJogadores = jogadores.stream()
                 .map(Jogador::getNome)
                 .collect(Collectors.toList());
