@@ -9,7 +9,6 @@ public class Jogador {
     private Long id;
     private String nome;
 
-    // getters e setters
     public Long getId() {
         return id;
     }
